@@ -1,0 +1,68 @@
+html {box-sizing: border-box;}
+*, *::before, *::after{box-sizing: inherit;}
+body{
+    background-color: rgb(82,155,205);
+    font-family: Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    color:rgb(234,234,234);
+    font-size: 11px;
+}
+
+body form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section{
+    display:flex;
+    flex-direction: column;
+    width: 280px;
+    
+}
+input, textarea, select, optgroup, option{
+    background-color: rgb(82,155,205);
+margin-left:20px;
+margin-right: 20px;
+
+}
+label, legend{ 
+    margin-left: 20px;
+    margin-bottom: 5px;
+    
+    
+    
+}
+input, textarea, select{
+    border: 2px solid rgb(234,234,234);
+    margin-bottom:20px;
+    outline: none;
+}
+/*
+input:hover, textarea:hover, select:hover{
+border: 2px solid rgb(39,96,140);
+}*/
+select {
+    color:rgb(234,234,234);
+    height:22px;
+}
+:placeholder-shown{
+    font-style: italic;
+    font-size: 15px;
+}
+input{
+    color:rgb(234,234,234);
+    font-family: Arial, Helvetica, sans-serif;
+    height:35px;
+    font-size: 12px;
+    padding-left: 10px;
+    -webkit-transition: height 2s;
+    transition: 2s;
+}
+textarea{
+    color: rgb(234,234,234);
+}
+input:focus{
+    border-color:rgb(39,96,140);
+}
+input:hover{
+    height: 60px;
+}
