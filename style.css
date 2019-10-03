@@ -35,11 +35,12 @@ input, textarea, select{
     border: 2px solid rgb(234,234,234);
     margin-bottom:20px;
     outline: none;
+    transition: height 1s, transform 1s;
 }
-/*
+
 input:hover, textarea:hover, select:hover{
 border: 2px solid rgb(39,96,140);
-}*/
+}
 select {
     color:rgb(234,234,234);
     height:22px;
@@ -54,15 +55,23 @@ input{
     height:35px;
     font-size: 12px;
     padding-left: 10px;
-    -webkit-transition: height 2s;
-    transition: 2s;
+    
+    
 }
 textarea{
     color: rgb(234,234,234);
 }
-input:focus{
+input:focus,select:focus,textarea:focus{
     border-color:rgb(39,96,140);
 }
-input:hover{
+input:hover,select:hover{
     height: 60px;
+    transform: rotate(-20deg);
 }
+textarea:hover{
+    
+    transform: rotate(-20deg);
+    height: 150px;
+}
+
+
